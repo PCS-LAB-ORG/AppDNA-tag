@@ -30,8 +30,9 @@ resource "aws_instance" "PublicWebTemplate" {
   user_data              = file("install-apache.sh")
 
   tags = {
-    Name = "web-asg"
-    app = "Application A"
+    Name        = "web-asg"
+    app         = "Application A"
+    application = "sockshop"
   }
 }
 
@@ -63,7 +64,8 @@ resource "aws_instance" "private-app-template" {
   key_name               = "source_key"
 
   tags = {
-    Name = "app-asg"
+    Name        = "app-asg"
+    application = "sockshop"
   }
 }
 

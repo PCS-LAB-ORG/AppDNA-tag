@@ -11,6 +11,9 @@ resource "aws_launch_template" "auto-scaling-group" {
     subnet_id       = aws_subnet.public-web-subnet-1.id
     security_groups = [aws_security_group.webserver-security-group.id]
   }
+  tags = {
+    application = "sockshop"
+  }
 }
 
 resource "aws_autoscaling_group" "asg-1" {
@@ -38,6 +41,9 @@ resource "aws_launch_template" "auto-scaling-group-private" {
   network_interfaces {
     subnet_id       = aws_subnet.private-app-subnet-1.id
     security_groups = [aws_security_group.ssh-security-group.id]
+  }
+  tags = {
+    application = "sockshop"
   }
 }
 

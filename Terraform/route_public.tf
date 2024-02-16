@@ -11,7 +11,8 @@ resource "aws_route_table" "public-route-table" {
   }
 
   tags = {
-    Name = "Public Route Table"
+    Name        = "Public Route Table"
+    application = "sockshop"
   }
 }
 

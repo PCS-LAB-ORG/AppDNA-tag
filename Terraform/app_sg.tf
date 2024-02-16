@@ -23,6 +23,7 @@ resource "aws_security_group" "ssh-security-group" {
   }
 
   tags = {
-    Name = "ssh Security group"
+    Name        = "ssh Security group"
+    application = "sockshop"
   }
 }
