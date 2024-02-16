@@ -9,7 +9,8 @@ resource "aws_subnet" "public-web-subnet-1" {
   map_public_ip_on_launch = true
 
   tags = {
-    Name = "Public Subnet 1"
+    Name        = "Public Subnet 1"
+    application = "sockshop"
   }
 }
 
@@ -24,7 +25,8 @@ resource "aws_subnet" "public-web-subnet-2" {
   map_public_ip_on_launch = true
 
   tags = {
-    Name = "Public Subnet 2"
+    Name        = "Public Subnet 2"
+    application = "sockshop"
   }
 }
 
@@ -39,7 +41,8 @@ resource "aws_subnet" "private-app-subnet-1" {
   map_public_ip_on_launch = false
 
   tags = {
-    Name = "Private Subnet 1 | App Tier"
+    Name        = "Private Subnet 1 | App Tier"
+    application = "sockshop"
   }
 }
 
@@ -54,7 +57,8 @@ resource "aws_subnet" "private-app-subnet-2" {
   map_public_ip_on_launch = false
 
   tags = {
-    Name = "Private Subnet 2 | App Tier"
+    Name        = "Private Subnet 2 | App Tier"
+    application = "sockshop"
   }
 }
 
@@ -69,7 +73,8 @@ resource "aws_subnet" "private-db-subnet-1" {
   map_public_ip_on_launch = false
 
   tags = {
-    Name = "Private Subnet 1 | Db Tier"
+    Name        = "Private Subnet 1 | Db Tier"
+    application = "sockshop"
   }
 }
 
@@ -84,6 +89,7 @@ resource "aws_subnet" "private-db-subnet-2" {
   map_public_ip_on_launch = false
 
   tags = {
-    Name = "Private Subnet 2 | Db Tier"
+    Name        = "Private Subnet 2 | Db Tier"
+    application = "sockshop"
   }
 }

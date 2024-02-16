@@ -6,7 +6,8 @@ resource "aws_eip" "eip_nat" {
   vpc = true
 
   tags = {
-    Name = "eip1"
+    Name        = "eip1"
+    application = "sockshop"
   }
 }
 
@@ -15,6 +16,7 @@ resource "aws_nat_gateway" "nat_1" {
   subnet_id     = aws_subnet.public-web-subnet-2.id
 
   tags = {
-    "Name" = "nat1"
+    "Name"      = "nat1"
+    application = "sockshop"
   }
 }

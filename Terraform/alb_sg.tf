@@ -30,6 +30,7 @@ resource "aws_security_group" "alb-security-group" {
   }
 
   tags = {
-    Name = "ALB Security group"
+    Name        = "ALB Security group"
+    application = "sockshop"
   }
 }

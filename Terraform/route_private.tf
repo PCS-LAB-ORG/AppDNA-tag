@@ -11,7 +11,8 @@ resource "aws_route_table" "private-route-table" {
   }
 
   tags = {
-    Name = "Private Route Table"
+    Name        = "Private Route Table"
+    application = "sockshop"
   }
 }
 
