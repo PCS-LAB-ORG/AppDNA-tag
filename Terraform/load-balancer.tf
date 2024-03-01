@@ -12,6 +12,7 @@ resource "aws_lb" "application-load-balancer" {
   tags = {
     Name        = "App load balancer"
     application = "sockshop"
+    yor_trace   = "0a483443-cf68-41ca-a583-9313c769b574"
   }
 }
 
@@ -22,6 +23,7 @@ resource "aws_lb_target_group" "alb_target_group" {
   vpc_id   = aws_vpc.vpc_01.id
   tags = {
     application = "sockshop"
+    yor_trace   = "5739bc17-728f-4afb-a9c3-70518cfcf8ce"
   }
 }
 

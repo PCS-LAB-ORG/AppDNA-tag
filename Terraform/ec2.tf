@@ -33,6 +33,7 @@ resource "aws_instance" "PublicWebTemplate" {
     Name        = "web-asg"
     app         = "Application A"
     application = "sockshop"
+    yor_trace   = "d2b4ac8d-8d41-4cbe-8f52-2ba8fadcdd18"
   }
 }
 
@@ -66,6 +67,7 @@ resource "aws_instance" "private-app-template" {
   tags = {
     Name        = "app-asg"
     application = "sockshop"
+    yor_trace   = "ca54c7be-8d8c-427b-8c1c-6f2338b4e95c"
   }
 }
 

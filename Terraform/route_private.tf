@@ -13,6 +13,7 @@ resource "aws_route_table" "private-route-table" {
   tags = {
     Name        = "Private Route Table"
     application = "sockshop"
+    yor_trace   = "d0a8e38d-e062-4ef0-99e2-429f2ee959f1"
   }
 }
 
