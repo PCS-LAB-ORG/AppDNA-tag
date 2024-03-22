@@ -9,6 +9,7 @@ resource "aws_db_subnet_group" "database-subnet-group" {
   tags = {
     Name        = "Database Subnets"
     application = "sockshop"
+    yor_trace   = "d8bd35ab-d104-4da6-96ce-1b83da63f714"
   }
 }
 #################################
@@ -30,5 +31,6 @@ resource "aws_db_instance" "database-instance" {
   vpc_security_group_ids = [aws_security_group.database-security-group.id]
   tags = {
     application = "sockshop"
+    yor_trace   = "ad573f88-ef52-406d-a37d-c404a58b7b20"
   }
 }

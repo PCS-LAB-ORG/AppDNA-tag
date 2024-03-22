@@ -8,5 +8,6 @@ resource "aws_internet_gateway" "igw" {
   tags = {
     Name        = "Test IGW"
     application = "sockshop"
+    yor_trace   = "e8d2efb1-a8a7-47b9-98e3-8d77a9ae6fff"
   }
 }

@@ -32,5 +32,6 @@ resource "aws_security_group" "alb-security-group" {
   tags = {
     Name        = "ALB Security group"
     application = "sockshop"
+    yor_trace   = "a8598a2e-103f-4262-99cf-7e5f05448e5c"
   }
 }

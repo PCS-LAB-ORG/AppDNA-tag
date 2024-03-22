@@ -13,6 +13,7 @@ resource "aws_launch_template" "auto-scaling-group" {
   }
   tags = {
     application = "sockshop"
+    yor_trace   = "1e8bdb84-fc8c-476a-86c1-c89262353d3e"
   }
 }
 
@@ -44,6 +45,7 @@ resource "aws_launch_template" "auto-scaling-group-private" {
   }
   tags = {
     application = "sockshop"
+    yor_trace   = "006fe799-6d02-4883-8f12-7c5e0c9eb57a"
   }
 }
 

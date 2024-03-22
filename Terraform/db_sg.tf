@@ -25,5 +25,6 @@ resource "aws_security_group" "database-security-group" {
   tags = {
     Name        = "Database Security group"
     application = "sockshop"
+    yor_trace   = "3b41f5f5-9398-4255-bafb-f51a96c8f6a5"
   }
 }
