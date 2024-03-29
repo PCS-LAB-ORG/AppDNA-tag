@@ -8,4 +8,4 @@ steps:
         env:
           PRISMA_API_URL: https://api2.prismacloud.io
         with:
-          api-key: ${{ 32de366a-e932-4000-a66d-468eae99908e.P3PU7GTnEalI2Slr+7lgdjCl/38= }}
+          api-key: ${{ secrets.BC_API_KEY }}
