@@ -23,8 +23,6 @@ resource "aws_security_group" "ssh-security-group" {
   }
 
   tags = {
-    Name        = "ssh Security group"
-    application = "sockshop"
-    yor_trace   = "10688f66-3a57-4138-a9b0-d9383fb10b2f"
+    Name = "ssh Security group"
   }
 }

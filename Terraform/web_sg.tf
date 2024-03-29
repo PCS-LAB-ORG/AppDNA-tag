@@ -37,8 +37,6 @@ resource "aws_security_group" "webserver-security-group" {
   }
 
   tags = {
-    Name        = "Web server Security group"
-    application = "sockshop"
-    yor_trace   = "0026962a-3854-44f1-b8b7-6d678344d652"
+    Name = "Web server Security group"
   }
 }

@@ -10,9 +10,7 @@ resource "aws_lb" "application-load-balancer" {
   enable_deletion_protection = false
 
   tags = {
-    Name        = "App load balancer"
-    application = "sockshop"
-    yor_trace   = "0a483443-cf68-41ca-a583-9313c769b574"
+    Name = "App load balancer"
   }
 }
 
@@ -21,10 +19,6 @@ resource "aws_lb_target_group" "alb_target_group" {
   port     = 80
   protocol = "HTTP"
   vpc_id   = aws_vpc.vpc_01.id
-  tags = {
-    application = "sockshop"
-    yor_trace   = "5739bc17-728f-4afb-a9c3-70518cfcf8ce"
-  }
 }
 
 resource "aws_lb_target_group_attachment" "web-attachment" {
