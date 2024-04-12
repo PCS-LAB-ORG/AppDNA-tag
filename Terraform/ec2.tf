@@ -30,7 +30,10 @@ resource "aws_instance" "PublicWebTemplate" {
   user_data              = file("install-apache.sh")
 
   tags = {
-    Name = "web-asg"
+    Name        = "web-asg"
+    Application = "AppDNA"
+    yor_name    = "PublicWebTemplate"
+    yor_trace   = "52e22462-2f9e-493b-98b7-df6301ff9cb5"
   }
 }
 
@@ -62,7 +65,10 @@ resource "aws_instance" "private-app-template" {
   key_name               = "source_key"
 
   tags = {
-    Name = "app-asg"
+    Name        = "app-asg"
+    Application = "AppDNA"
+    yor_name    = "private-app-template"
+    yor_trace   = "eec05111-53ae-4629-88e1-6f4520cf6efc"
   }
 }
 
